@@ -133,6 +133,11 @@ a {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  .navbar-brand img {
+    height: 3.5rem;
+  }
+
   .nav-link::before {
     content: "";
     position: absolute;
