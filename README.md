@@ -4,4 +4,4 @@ Sitio de aves.
 
 ## Proyectos
 
-- [MultiPage interectiva](https://amauryarenas51.github.io/aves/aves/)
+- [MultiPage interactiva](https://amauryarenas51.github.io/aves/aves/)
