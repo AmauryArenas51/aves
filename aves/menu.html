@@ -19,7 +19,7 @@
 
 <body">
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-lg d-flex">
       <!-- Logo AdN -->
       <a class="navbar-brand me-auto p-2 flex-fill" href="#"><img src="img/acercadenosotros.svg " class="img-fluid"
@@ -37,10 +37,10 @@
         <div class="offcanvas-body me-0">
           <ul class="navbar-nav mx-auto me-lg-0">
             <li class="nav-item">
-              <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link mx-lg-2" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="menu.html">Menú</a>
+              <a class="nav-link mx-lg-2 active" href="menu.html">Menú</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link mx-lg-2 dropdown-toggle" href="aves.html" role="button" data-bs-toggle="dropdown"
@@ -72,14 +72,50 @@
 
   <!-- Content -->
   <main>
-    <div class="container">
+    <div class="container ">
+      <section class="row vh-85 align-items-center">
 
+        <article class="col-12 col-lg-4 px-4 fade-in-start">
+          <a class="card">
+            <img src="img/las-aves.png" alt="Las aves">
+            <aside class="card-info">
+              <div class="text-overflow-hidden text-card-responsive">
+                <h3>Las aves</h3>
+                <p>Conoce más acerca de las aves que visitan la República Mexicana durante su proceso de migración.
+              </div>
+            </aside>
+          </a>
+        </article>
+
+        <article class="col-12 col-lg-4 px-4 fade-in">
+          <a class="card">
+            <img src="img/las-rutas.png" alt="Las rutas">
+            <aside class="card-info">
+              <div class="text-overflow-hidden text-card-responsive">
+                <h3>Las rutas</h3>
+                <p>Conoce las 4 rutas de migración que atraviesan la Republica mexicana
+              </div>
+            </aside>
+          </a>
+        </article>
+        <article class="col-12 col-lg-4 px-4 fade-in-end">
+          <a class="card">
+            <img src="img/aviario.png" alt="Aviario">
+            <aside class="card-info">
+              <div class="text-overflow-hidden text-card-responsive">
+                <h3>Aviario</h3>
+                <p>Da un recorrido 360° al Aviario Abraham Lincoln y conoce las especies que albergan
+              </div>
+            </aside>
+          </a>
+        </article>
+      </section>
     </div>
   </main>
   <!-- End Content -->
 
   <!-- Footer -->
-  <footer class="bg-dark text-white p-3 fixed-bottom">
+  <footer class="bg-dark text-white p-3 sticky-bottom">
     <div class="row container text-center mx-auto">
       <small class="">&copy; Acerca de Nosotros</small>
     </div>
