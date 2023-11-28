@@ -2,6 +2,7 @@
 
 :root {
   --first-color: rgb(209, 146, 119);
+  --first-alpha-color: rgba(209, 146, 119, .75);
   --second-color: rgb(239, 203, 181);
   --third-color: rgb(96, 93, 76);
 
@@ -12,6 +13,7 @@
   --hero-opacity-color: rgba(0, 0, 0, .5);
 
   --first-font: 'Italiana', serif;
+  --second-font: 'Italianno', serif;
   --title-vw-size: 7.5vw;
 
 }
@@ -26,12 +28,17 @@ body {
 
 a {
   color: var(--link-color);
-  transition: all .3s ease-out;
+  transition: all 0.5s ease-out;
+  text-decoration: none;
 }
 
-a {
-  color: var(--first-color);
+a:hover {
+  opacity: .75;
 }
+
+/* a {
+  color: var(--first-color);
+} */
 
 /* Bootsrap Styles */
 
@@ -114,7 +121,7 @@ a {
 }
 
 .offcanvas {
-  background-color: var(--first-color) !important;
+  background-color: var(--first-alpha-color) !important;
 }
 
 .offcanvas-title {
