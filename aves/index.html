@@ -17,15 +17,15 @@
   <link rel="icon" href="img/acercadenosotros.svg">
 </head>
 
-<body>
+<body class="vh-100 position-relative">
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-lg d-flex">
       <!-- Logo AdN -->
       <a class="navbar-brand me-auto p-2 flex-fill" href="#"><img src="img/acercadenosotros.svg " class="img-fluid"
           alt="Acerca de Nosotros"></a>
       <!-- Logo Libertad -->
-      <a class="navbar-brand d-flex justify-content-center p-2 flex-fill fs-1" href="#">Libertad</a>
+      <a class="navbar-brand d-flex justify-content-center p-2 flex-fill fs-1" href="index.html">Libertad</a>
       <!-- Offcanvas -->
       <div class="offcanvas offcanvas-end text-bg-dark d-flex justify-content-end p-2 flex-fill" tabindex="-1"
         id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -37,32 +37,32 @@
         <div class="offcanvas-body me-0">
           <ul class="navbar-nav mx-auto me-lg-0">
             <li class="nav-item">
-              <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#">Menú</a>
+              <a class="nav-link mx-lg-2" href="menu.html">Menú</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link mx-lg-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link mx-lg-2 dropdown-toggle" href="aves.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Aves
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="#">Mosquero Cordillerano</a></li>
-                <li><a class="dropdown-item" href="#">Golondrina Tijereta</a></li>
-                <li><a class="dropdown-item" href="#">Golondrina Tijereta</a></li>
-                <li><a class="dropdown-item" href="#">Mosquero Cordillerano</a></li>
-                <li><a class="dropdown-item" href="#">Chipe Mejilla Dorada</a></li>
-                <li><a class="dropdown-item" href="#">Chara Pecho Gris</a></li>
+                <li><a class="dropdown-item" href="mosquero.html">Mosquero Cordillerano</a></li>
+                <li><a class="dropdown-item" href="golondrina.html">Golondrina Tijereta</a></li>
+                <li><a class="dropdown-item" href="golondrina-2.html">Golondrina Tijereta</a></li>
+                <li><a class="dropdown-item" href="mosquero-2.html">Mosquero Cordillerano</a></li>
+                <li><a class="dropdown-item" href="chipe.html">Chipe Mejilla Dorada</a></li>
+                <li><a class="dropdown-item" href="chara.html">Chara Pecho Gris</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="#">Rutas</a>
+              <a class="nav-link mx-lg-2" href="rutas.html">Rutas</a>
             </li>
           </ul>
         </div>
       </div>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+      <button class="navbar-toggler border-0 me-auto p-2 flex-fill " type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -71,15 +71,40 @@
   <!-- End NavBar -->
 
   <!-- Content -->
-  <main class="pt-5">
-    <h1>Sección Principal</h1>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quae, eaque cum optio soluta quis at explicabo
-    culpa fuga non nihil labore voluptate repudiandae autem dolorum odit qui similique impedit.
+  <main>
+    <div class="container">
+      <article>
+        <div class="hero-video position-absolute top-50 start-50 translate-middle">
+          <video autoplay muted loop preaload="auto" controlslist="nodownload">
+            <source src="video/PH1.mp4" type="video/mp4">
+          </video>
+          <aside class="hero-video-opacity position-absolute top-50 start-50 translate-middle"
+            style="--hero-opacity-color:var(--black-alpha-color);">
+            <div class="hero-video-content hero-video-title text-bg-white-alpha"
+              style='--hero-text-color:var(--bs-white); --hero-text-font:var(--first-font);'>
+              <p class="fs-1 text-start">
+                "Libertad"
+                <small class="fs-6">
+                  <i>Del lat. libertas, -átis</i>
+                </small>
+              </p>
+              <p class="fs-3 text-start">
+                Facilidad, soltura, diposición <br> natural para hacer algo <br> con destreza.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <section class="d-flex justify-content-between aves ">
+        <img src="img/Mexican_jay.png" class="position-absolute bottom-0 start-0 fade-in-start" alt="Chara pecho gris">
+        <img src="img/Ave01.png" class="position-absolute bottom-0 end-0 fade-in-end" alt="Chara pecho gris">
+      </section>
+    </div>
   </main>
   <!-- End Content -->
 
   <!-- Footer -->
-  <footer class="bg-dark text-white p-3">
+  <footer class="bg-dark text-white p-3 fixed-bottom">
     <div class="row container text-center mx-auto">
       <small class="">&copy; Acerca de Nosotros</small>
     </div>
