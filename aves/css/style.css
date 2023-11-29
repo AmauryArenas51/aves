@@ -216,6 +216,10 @@ a:hover {
   padding: 1rem;
 }
 
+.second-font {
+  font-family: var(--second-font);
+}
+
 .text-card-responsive h3 {
   font-family: var(--second-font);
   font-size: 4rem;
@@ -231,20 +235,18 @@ a:hover {
 
 /* My Animations */
 
-@keyframes fade-in-start {
+@keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateX(-100%);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0%);
   }
 }
 
-.fade-in-start {
-  animation-name: fade-in-start;
+.fade-in {
+  animation-name: fade-in;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
@@ -267,7 +269,25 @@ a:hover {
   animation-timing-function: ease-out;
 }
 
-@keyframes fade-in {
+@keyframes fade-in-start {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.fade-in-start {
+  animation-name: fade-in-start;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fade-in-text {
   0% {
     opacity: 0;
   }
@@ -281,8 +301,8 @@ a:hover {
   }
 }
 
-.fade-in {
-  animation-name: fade-in;
+.fade-in-text {
+  animation-name: fade-in-text;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
 }
