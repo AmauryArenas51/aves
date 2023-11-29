@@ -16,9 +16,16 @@
   --second-font: 'Italianno', serif;
   --title-vw-size: 7.5vw;
 
+  --grey-color: rgb(212, 212, 212);
+  --dark-grey-color: rgb(37, 37, 37);
+  --dark-grey-alpha-color: rgba(37, 37, 37, 0.6);
 }
 
 /* Reset Styles */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -159,6 +166,12 @@ a {
   filter: drop-shadow(10px 10px 2px #fff);
 }
 
+.bg-third-color {
+  background-color: var(--third-color);
+  border-radius: .5rem;
+  padding: 3rem;
+}
+
 .card {
   position: relative;
   width: 100%;
@@ -235,6 +248,23 @@ a {
 
 .second-font {
   font-family: var(--second-font);
+}
+
+.semi-modal {
+  color: var(--bs-white);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 80vh;
+}
+
+.semi-modal h2 {
+  font-size: 3rem;
+  font-family: var(--second-font);
+}
+
+.semi-modal img {
+  min-height: 6rem;
 }
 
 .text-card-responsive h3 {
@@ -322,6 +352,25 @@ a {
   animation-name: fade-in-text;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
+}
+
+/* Scroll */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--second-color);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--second-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: var(--first-color);
 }
 
 /* // X-Small devices (portrait phones, less than 576px)
