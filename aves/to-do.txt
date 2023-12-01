@@ -6,7 +6,7 @@
 
 - Fondo de hierba en Aves ---
 
-- Botón en el pico
+- Botón en el pico ---
 
 - Aves, en las imágenes agregar un modal en grande de la img, y ponerle un glow de color ---
 
@@ -14,8 +14,8 @@
 
 - Fondo del color de la ruta y texto justificado ---
 
-- Entrevistas video borde negro
+- Entrevistas video borde negro ---
 
-- Botón para regresar arriba de la página
+- Botón para regresar arriba de la página ---
 
 - Checkbox en cada página

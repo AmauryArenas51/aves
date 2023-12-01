@@ -25,6 +25,12 @@
   --brown-route: rgb(106, 73, 40);
   --yellow-route: rgb(255, 214, 0);
   --green-route: rgb(0, 143, 57);
+
+  --bird-color01: rgb(38, 163, 169);
+  --bird-color02: rgba(241, 95, 33, 255);
+  --bird-color03: rgba(158, 157, 97, 255);
+  --bird-color04: rgba(237, 182, 45, 255);
+  --bird-color05: rgba(133, 169, 192, 255);
 }
 
 /* Reset Styles */
